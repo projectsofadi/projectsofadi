@@ -1,18 +1,24 @@
-# Adrian Cristache
+# Projects by Adi
 
-Founding Partner & CTO at Equinox AI · 15 years in software · Bucharest, Romania (remote, EU/US overlap).
-I build LLM/agent systems in production. At Equinox AI that means multi-agent review with verification gates on every money-path change to a crypto market-making platform that's been live 24/7 for 7+ years. The repositories here are independent, from-scratch builds of the same patterns — deliberately small, self-contained, and written to be reused.
+I build open-source tools for AI agents, developer workflows and trading research.
 
-**Focus:** multi-agent orchestration · Model Context Protocol (MCP) · agent evaluation & reliability · production hardening
-**Contact:** adi@adriancristache.com · [LinkedIn](https://www.linkedin.com/in/adrian-cristache)
+My projects explore how to connect agents to useful tools, coordinate their work and test trading ideas reproducibly. You'll find reusable templates, focused utilities and experimental prototypes.
 
-## What each repository demonstrates
+## Projects
 
-| Repository | What it shows |
-|---|---|
-| [mcp-ci-triage](https://github.com/projectsofadi/mcp-ci-triage) | A working MCP server — GitHub Actions triage for coding agents: four read-only tools, one hardened network seam (deadlines, byte caps, redirect policy), 42 offline tests |
-| [mcp-server-template](https://github.com/projectsofadi/mcp-server-template) | The build method behind it — I/O seams, offline test harness, least-privilege docs, and an 8-step half-day workflow ([BUILDING.md](https://github.com/projectsofadi/mcp-server-template/blob/HEAD/BUILDING.md)) |
-| [ai_dev_team](https://github.com/projectsofadi/ai_dev_team) | An experimental multi-agent dev-team prototype — one shared ReAct loop, delegation as tool calls, fail-closed approval gates, a TS↔Python task bridge; 139 tests across both languages |
-| [StrategyLab](https://github.com/projectsofadi/StrategyLab) | A deterministic strategy backtesting lab — strategies as validated JSON configs, adversarial weakness analysis in plain language, 141 offline tests |
+| Project | What it does |
+| --- | --- |
+| [mcp-ci-triage](https://github.com/projectsofadi/mcp-ci-triage) | Gives coding agents read-only access to GitHub Actions runs and failure information through MCP. |
+| [mcp-server-template](https://github.com/projectsofadi/mcp-server-template) | A starting point for building Python MCP servers, with example tools, offline tests and a documented development workflow. |
+| [ai_dev_team](https://github.com/projectsofadi/ai_dev_team) | An experimental multi-agent development team exploring task delegation and approval-gated workflows. |
+| [StrategyLab](https://github.com/projectsofadi/StrategyLab) | A research prototype for backtesting rule-based strategies, replaying historical bars and exploring strategy weaknesses. |
 
-All four are MIT-licensed with CI on Python 3.11–3.14 (SHA-pinned actions, ruff, offline test suites).
+## Approach
+
+Clear interfaces, explicit permissions and reproducible tests. I aim to make the code easy to inspect, understand and adapt.
+
+See each repository for setup instructions, project status and limitations.
+
+## Contact
+
+[adi@adriancristache.com](mailto:adi@adriancristache.com)
